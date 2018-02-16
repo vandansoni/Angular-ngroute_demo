@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <!-- SCROLLS -->
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+    <!-- SPELLS -->
+    <!-- load angular and angular route via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-data-table/0.7.0/dataTable.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Employee Management System</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">     
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#employees">
+                            <i class="fa fa-shield"></i> Add</a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa fa-comment"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+
+    </div>
+</body>
+<!-- json-server --watch db.json --static . 
+		run using local host link -->
+</html>
